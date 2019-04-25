@@ -2,6 +2,33 @@
 
 This repo can be forked to start a new basic LTI (Learning Tools Interoperability) app. Initially the launch endpoint does not validate the signature or use any data from the launch. This can be added as needed.
 
+## Development
+
+### Install dependencies
+
+If you have just cloned this repo, you will need to install the dependencies before you can run the application. Likewise if another developer has added or changed the dependencies since you last installed you will need to run this again.
+
+```bash
+npm install
+```
+
+### Run the development server
+
+Note: While running in this mode, changes to client code will automatically build new browser bundles, and changes to server will restart the server.
+
+```bash
+npm run dev
+```
+
+
+### Run tests
+
+This will automatically re-run tests for files that you change as you are developing. This is nice to always have running as you work.
+
+```bash
+npm run test:watch
+```
+
 ## Libraries Used
 
 - **Express.js** - Backend web framework
