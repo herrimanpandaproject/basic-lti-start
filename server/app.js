@@ -11,6 +11,7 @@ module.exports = env => {
   const port = env.PORT || 3000;
   app.set("port", port);
   app.set("view engine", "ejs");
+  app.set("trust proxy", "true");
   app.set("views", join(__dirname, "views"));
   app.set("views", join(__dirname, "views"));
   app.locals.assetBaseUrl = env.ASSET_HOST || null;
